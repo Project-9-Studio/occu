@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "occu",
+    "name": "Occu",
     "slug": "occu",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -24,6 +24,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
