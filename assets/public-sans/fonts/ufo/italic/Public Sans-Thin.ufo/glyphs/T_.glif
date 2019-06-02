@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="T" format="1">
+  <advance width="1110"/>
+  <unicode hex="0054"/>
+  <outline>
+    <contour>
+      <point x="465" y="0" type="line"/>
+      <point x="537" y="0" type="line"/>
+      <point x="729" y="1366" type="line"/>
+      <point x="1149" y="1366" type="line"/>
+      <point x="1159" y="1446" type="line"/>
+      <point x="211" y="1446" type="line"/>
+      <point x="201" y="1366" type="line"/>
+      <point x="657" y="1366" type="line"/>
+    </contour>
+    <contour>
+      <point x="505" y="4" type="move" name="bottom"/>
+    </contour>
+    <contour>
+      <point x="707" y="1446" type="move" name="top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2019-05-07 06:03:45 +0000</string>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>X</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>X</string>
+    </dict>
+  </lib>
+</glyph>

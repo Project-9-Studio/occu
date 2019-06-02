@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="six.subs" format="1">
+  <advance width="836"/>
+  <outline>
+    <component base="six.dnom" xOffset="-46" yOffset="-330"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2019-05-07 06:04:45 +0000</string>
+    </dict>
+  </lib>
+</glyph>
