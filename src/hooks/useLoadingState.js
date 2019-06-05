@@ -28,7 +28,8 @@ export default function withLoadingState(Component) {
             });
 
             const fonts = Font.loadAsync({
-                'public-sans-bold': require('../../assets/public-sans/fonts/webfonts/PublicSans-Bold.ttf'),
+              'public-sans': require('../../assets/public-sans/fonts/webfonts/PublicSans-Regular.ttf'),
+              'public-sans-bold': require('../../assets/public-sans/fonts/webfonts/PublicSans-Bold.ttf'),
             });
 
             return Promise.all([...cacheImages, fonts]);
