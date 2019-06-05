@@ -1,10 +1,10 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import dummyData from './defaultJobs';
 
 export function Job({ job={} }) {
     return (
-        <View style={styles.job}>
+        <TouchableOpacity style={styles.job}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>{job.company}</Text>
                 <Text style={styles.headerDate}>{job.date}</Text>
@@ -16,7 +16,7 @@ export function Job({ job={} }) {
                     <Text style={styles.text}>{job.location}</Text>
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     );
 }
 

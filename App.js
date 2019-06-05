@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StatusBar, StyleSheet, View } from 'react-native';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import withLoadedState from './src/hooks/useLoadingState';
 import Header from './src/components/Header';
@@ -31,7 +31,12 @@ const AppNavigator = createStackNavigator({
 export const AppContainer = createAppContainer(AppNavigator);
 
 export function App() {
-  return <AppContainer />;
+  return (
+    <React.Fragment>
+      <StatusBar barStyle="dark-content" />
+      <AppContainer />
+    </React.Fragment>
+  );
 }
 
 const styles = StyleSheet.create({
