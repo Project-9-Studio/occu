@@ -4,12 +4,14 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import withLoadedState from './src/hooks/useLoadingState';
 import Header from './src/components/Header';
 import FilterJobs from './src/components/FilterJobs';
+import JobsList from './src/components/JobsList';
 
 export const HomeScreen = withLoadedState(class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <FilterJobs />
+        <JobsList />
       </View>
     );
   }
