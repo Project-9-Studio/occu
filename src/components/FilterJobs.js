@@ -1,16 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Entypo } from '@expo/vector-icons';
 
 export default function FilterJobs() {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container}>
             <Text style={styles.status}>Applied</Text>
-        </View>
+            <View style={styles.icon}>
+                <Entypo name="sound-mix" size={22} color="white" />
+            </View>
+        </TouchableOpacity>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
+        position: 'relative',
         flexDirection: 'row',
         backgroundColor: '#232323',
         borderRadius: 18,
@@ -24,6 +29,11 @@ const styles = StyleSheet.create({
         fontFamily: 'public-sans',
         fontSize: 18,
         color: 'white'
+    },
+    icon: {
+        position: 'absolute',
+        right: 24,
+        top: 9
     }
 });
 
