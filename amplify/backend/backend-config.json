@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"occu31cf940b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
