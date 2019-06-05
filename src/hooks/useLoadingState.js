@@ -1,20 +1,37 @@
 import React from 'react';
-import { Font } from 'expo';
+import { AppLoading, Font } from 'expo';
 
 export default function withLoadingState(Component) {
     class ProvideLoadedState extends React.PureComponent {
         state = { loaded: false };
 
-        async componentDidMount() {
-            await Font.loadAsync({
-              'public-sans-bold': require('../../assets/public-sans/fonts/webfonts/PublicSans-Bold.ttf'),
-            });
-        
-            this.setState({ loaded: true })
+        render() {
+            if (!this.state.loaded) {
+                return (
+                  <AppLoading
+                    startAsync={this._cacheResourcesAsync}
+                    onFinish={this._onFinish}
+                    onError={console.warn}
+                  />
+                );
+            }
+            return <Component {...this.props} />;
         }
 
-        render() {
-            return <Component {...this.props} loaded={this.state.loaded} />;
+        _onFinish = () => this.setState({ loaded: true });
+
+        async _cacheResourcesAsync() {
+            const images = [];
+        
+            const cacheImages = images.map((image) => {
+              return Asset.fromModule(image).downloadAsync();
+            });
+
+            const fonts = Font.loadAsync({
+                'public-sans-bold': require('../../assets/public-sans/fonts/webfonts/PublicSans-Bold.ttf'),
+            });
+
+            return Promise.all([...cacheImages, fonts]);
         }
     }
 

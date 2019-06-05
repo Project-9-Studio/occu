@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Occu",
+    "name": "Occu: Job Organizer",
     "slug": "occu",
     "privacy": "public",
     "sdkVersion": "32.0.0",
@@ -8,13 +8,14 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "primaryColor": "#1fba9a",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1fba9a"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -23,7 +24,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.project9.occu",
+      "buildNumber": "0.0.1"
+    },
+    "android": {
+      "package": "com.project9.occu",
+      "versionCode": 1
     },
     "description": ""
   }
