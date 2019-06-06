@@ -1,12 +1,13 @@
 import React from 'react';
 import { StatusBar, StyleSheet, View } from 'react-native';
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createStackNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation";
 import withLoadedState from './src/hooks/useLoadingState';
 import Header from './src/components/Header';
 import FilterJobs from './src/components/FilterJobs';
 import JobsList from './src/components/JobsList';
+import BottomTabNavigator from './src/components/BottomTabNavigator';
 
-export const HomeScreen = withLoadedState(class Home extends React.Component {
+export class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -15,11 +16,18 @@ export const HomeScreen = withLoadedState(class Home extends React.Component {
       </View>
     );
   }
+};
+
+const HomeNavigator = createBottomTabNavigator({
+  Home,
+}, {
+  initialRouteName: 'Home',
+  tabBarComponent: BottomTabNavigator
 });
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: HomeScreen
+    screen: HomeNavigator
   }
 }, {
   initialRouteName: 'Home',
