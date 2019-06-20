@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"occu36873562": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

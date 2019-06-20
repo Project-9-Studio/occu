@@ -2,12 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Avatar from './Avatar';
 
-export default function AppHeader() {
+export default function AppHeader({ image }) {
     return (
         <View style={styles.container}>
             <View style={styles.inner}>
                 <Text style={styles.header}>Occu</Text>
-                <Avatar />
+                <Avatar image={{ uri: image }} />
             </View>
         </View>
     );
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#EFEFF4',
         height: 110,
         justifyContent: 'flex-end',
+        alignSelf: 'stretch',
         paddingLeft: 24,
         paddingRight: 24,
         paddingBottom: 12,

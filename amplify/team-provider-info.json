@@ -1,0 +1,21 @@
+{
+    "occu": {
+        "awscloudformation": {
+            "AuthRoleName": "occu-occu-20190606184019-authRole",
+            "UnauthRoleArn": "arn:aws:iam::856233086576:role/occu-occu-20190606184019-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::856233086576:role/occu-occu-20190606184019-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "occu-occu-20190606184019-deployment",
+            "UnauthRoleName": "occu-occu-20190606184019-unauthRole",
+            "StackName": "occu-occu-20190606184019",
+            "StackId": "arn:aws:cloudformation:us-east-1:856233086576:stack/occu-occu-20190606184019/10138d20-88ac-11e9-b6ad-0e16aabfe77c"
+        },
+        "categories": {
+            "auth": {
+                "occu36873562": {
+                    "hostedUIProviderCreds": "[{\"ProviderName\":\"Facebook\",\"client_id\":\"321618182071489\",\"client_secret\":\"449b0bb15045d86cff0725d7ecfaf0e0\"},{\"ProviderName\":\"Google\",\"client_id\":\"166196681540-amscpte2tvdj0fdi4shapi1ochfvet9v.apps.googleusercontent.com\",\"client_secret\":\"UkUJqZlFIB5XK_X-XCfGgYa9\"}]"
+                }
+            }
+        }
+    }
+}

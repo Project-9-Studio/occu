@@ -3,12 +3,13 @@
     "name": "Occu: Job Organizer",
     "slug": "occu",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
       "android"
     ],
     "version": "0.1.0",
+    "scheme": "occu",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "primaryColor": "#1FDA9A",
@@ -35,6 +36,9 @@
       "package": "com.project9.occu",
       "versionCode": 1
     },
-    "description": ""
+    "description": "",
+    "facebookScheme": "fb321618182071489",
+    "facebookAppId": "321618182071489",
+    "facebookDisplayName": "Occu"
   }
 }

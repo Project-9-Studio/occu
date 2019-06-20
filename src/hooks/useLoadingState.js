@@ -1,5 +1,6 @@
 import React from 'react';
-import { AppLoading, Font } from 'expo';
+import { AppLoading } from 'expo';
+import * as Font from 'expo-font';
 
 export default function withLoadingState(Component) {
     class ProvideLoadedState extends React.PureComponent {
