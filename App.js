@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { StatusBar, StyleSheet, Text, View, TextInput } from 'react-native';
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import { Provider, connect } from 'react-redux';
 import withLoadedState from './src/hooks/useLoadingState';
@@ -11,6 +11,7 @@ import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
 import store from './src/models';
 import { actions } from './src/models/auth';
+import Login from './src/components/Login';
 
 Amplify.configure(aws_exports);
 
@@ -54,25 +55,6 @@ const AppNavigator = createStackNavigator({
 });
 
 export const AppContainer = createAppContainer(AppNavigator);
-
-const Login = connect(null, {
-  loginWithFB: actions.loginWithFacebook,
-  loginWithGoogle: actions.loginWithGoogle
-})(function({ loginWithFB, loginWithGoogle }) {
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <View style={styles.loginContainer}>
-        <Text style={{ marginBottom: 50, fontSize: 60, fontFamily: 'public-sans-bold' }}>Occu</Text>
-        
-        <View style={{ marginBottom: 25 }}>
-          <Button onPress={loginWithFB} title="Login with Facebook" color="blue" />
-        </View>
-    
-        <Button onPress={loginWithGoogle} title="Login with Google" color="red" />
-      </View>
-    </SafeAreaView>
-  );
-})
 
 export class App extends React.Component {
   componentDidMount() {
@@ -129,11 +111,6 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     paddingLeft: 25,
     paddingRight: 25
-  },
-  loginContainer: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
   }
 });
 
