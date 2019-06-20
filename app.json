@@ -26,7 +26,7 @@
     ],
     "ios": {
       "bundleIdentifier": "com.project9.occu",
-      "buildNumber": "0.0.3",
+      "buildNumber": "0.0.4",
       "infoPlist": {
         "CFBundleName": "Occu",
         "CFBundleDisplayName": "Occu"
