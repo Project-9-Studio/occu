@@ -21,7 +21,7 @@ export class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Header image={this.props.user.picture && this.props.user.picture.data.url} />
+        <Header image={this.props.user.picture.data.url} logout={this.props.logout} />
         <View style={styles.inner}>
           <FilterJobs />
           <JobsList />
@@ -48,7 +48,10 @@ export class Timeline extends React.Component {
 };
 
 const AppNavigator = createStackNavigator({
-  Home: { screen: connect((state) => ({ user: state.user }))(Home) }
+  Home: { screen: connect((state) => ({
+      user: state.user
+    }), { logout: actions.logout })(Home) 
+  }
 }, {
   initialRouteName: 'Home',
   headerMode: 'none'

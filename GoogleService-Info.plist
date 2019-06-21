@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>166196681540-vde9evnjpugillpr4s18om94eolmj9k1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.166196681540-vde9evnjpugillpr4s18om94eolmj9k1</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>166196681540-vdsrqmd2ik2tvmf9jdeh1naa192945l8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCim6PFpr1HDo2frTxyD_YN70HgSfj9yV8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>166196681540</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.project9.occu</string>
+	<key>PROJECT_ID</key>
+	<string>occu-242914</string>
+	<key>STORAGE_BUCKET</key>
+	<string>occu-242914.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:166196681540:ios:cf603f47c7b9fd9a</string>
+	<key>DATABASE_URL</key>
+	<string>https://occu-242914.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,13 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Avatar from './Avatar';
 
-export default function AppHeader({ image }) {
+export default function AppHeader({ image, logout }) {
     return (
         <View style={styles.container}>
             <View style={styles.inner}>
                 <Text style={styles.header}>Occu</Text>
-                <Avatar image={{ uri: image }} />
+                <TouchableOpacity onPress={logout}>
+                    <Avatar image={{ uri: image }} />
+                </TouchableOpacity>
             </View>
         </View>
     );

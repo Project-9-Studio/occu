@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "166196681540",
+    "firebase_url": "https://occu-242914.firebaseio.com",
+    "project_id": "occu-242914",
+    "storage_bucket": "occu-242914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166196681540:android:cf603f47c7b9fd9a",
+        "android_client_info": {
+          "package_name": "com.project9.occu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166196681540-5a0vbd3v31f8gfkqb8loe1c1qm5imgv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKtiBDln0QVwH2GODgE1TyPVLvPYtt1Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166196681540-5a0vbd3v31f8gfkqb8loe1c1qm5imgv2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "166196681540-vde9evnjpugillpr4s18om94eolmj9k1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.project9.occu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

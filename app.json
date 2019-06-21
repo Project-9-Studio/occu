@@ -26,14 +26,20 @@
     ],
     "ios": {
       "bundleIdentifier": "com.project9.occu",
-      "buildNumber": "0.0.4",
+      "buildNumber": "0.0.7",
       "infoPlist": {
         "CFBundleName": "Occu",
         "CFBundleDisplayName": "Occu"
+      },
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.166196681540-vde9evnjpugillpr4s18om94eolmj9k1"
+        }
       }
     },
     "android": {
       "package": "com.project9.occu",
+      "googleServicesFile": "./google-services.json",
       "versionCode": 1
     },
     "description": "",
