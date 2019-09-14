@@ -40,7 +40,9 @@ export default function JobsList({ jobs=dummyData }) {
 
 const styles = StyleSheet.create({
     container: {
-        alignSelf: 'stretch'
+        alignSelf: 'stretch',
+        paddingLeft: 25,
+        paddingRight: 25
     },
     job: {
         backgroundColor: '#ECE1FE',

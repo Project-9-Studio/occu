@@ -37,8 +37,6 @@ export const styles = StyleSheet.create({
     },
     inner: {
       flex: 1,
-      alignSelf: 'stretch',
-      paddingLeft: 25,
-      paddingRight: 25
+      alignSelf: 'stretch'
     }
 });

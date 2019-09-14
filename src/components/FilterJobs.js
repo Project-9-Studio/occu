@@ -20,7 +20,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#232323',
         borderRadius: 18,
         marginTop: 15,
-        marginBottom: 15,
+        marginBottom: 10,
+        marginLeft: 25,
+        marginRight: 25,
         padding: 10
     },
     status: {
