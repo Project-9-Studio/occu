@@ -19,9 +19,13 @@ export class Home extends React.Component {
   state = { showTimeline: false };
 
   render() {
+    const { user } = this.props;
     return (
       <View style={styles.container}>
-        <Header image={this.props.user.picture.data.url} logout={this.props.logout} />
+        <Header
+          image={user.photoURL || (user.picture && user.picture.data.url)}
+          logout={this.props.logout}
+        />
         <View style={styles.inner}>
           <FilterJobs />
           <JobsList />
