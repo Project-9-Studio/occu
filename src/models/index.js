@@ -1,9 +1,11 @@
 import { configureStore } from 'redux-starter-kit';
-import userReducer from './auth';
+import user from './auth';
+import jobs from './jobs';
 
 const store = configureStore({
     reducer: {
-      user: userReducer
+      user,
+      jobs
     }
 });
 

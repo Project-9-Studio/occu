@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import dummyData from './defaultJobs';
+import { useSelector } from 'react-redux';
 
 export function Job({ job={} }) {
     return (
@@ -20,13 +20,17 @@ export function Job({ job={} }) {
     );
 }
 
-export default function JobsList({ jobs=dummyData }) {
+export default function JobsList() {
+    const jobs = useSelector((state) => state.jobs.list);
+
     function renderItem({ item }) {
         return <Job job={item} />;
     }
+
     function keyExtractor(item) {
         return item.pk;
     }
+
     return (
         <FlatList
             data={jobs}
