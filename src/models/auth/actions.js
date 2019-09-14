@@ -20,6 +20,8 @@ export function loginWithFacebook() {
 
                 const authUser = await Auth.currentAuthenticatedUser();
                 dispatch(slice.actions.setUser(authUser));
+            } else {
+                alert(type);
             }
         } catch ({ message }) {
             alert(message);
