@@ -7,7 +7,8 @@ export function loginWithFacebook() {
     return async (dispatch) => {
         try {
             const { type, token, expires } = await Facebook.logInWithReadPermissionsAsync("321618182071489", {
-                permissions: ["public_profile", "email"]
+                permissions: ["public_profile", "email"],
+                behavior: 'web'
             });
         
             if (type === "success") {
@@ -20,8 +21,6 @@ export function loginWithFacebook() {
 
                 const authUser = await Auth.currentAuthenticatedUser();
                 dispatch(slice.actions.setUser(authUser));
-            } else {
-                alert(type);
             }
         } catch ({ message }) {
             alert(message);
