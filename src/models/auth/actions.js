@@ -6,9 +6,8 @@ import slice from './slice';
 export function loginWithFacebook() {
     return async (dispatch) => {
         try {
-            const { type, token, expires } = await Facebook.logInWithReadPermissionsAsync("321618182071489", {
-                permissions: ["public_profile", "email"],
-                behavior: 'web'
+            const { type, token, expires } = await Facebook.logInWithReadPermissionsAsync({
+                permissions: ["public_profile", "email"]
             });
         
             if (type === "success") {
@@ -17,7 +16,7 @@ export function loginWithFacebook() {
                 );
                 
                 const user = await response.json();
-                await Auth.federatedSignIn('facebook', { token, expires_at: expires }, user);
+                await Auth.federatedSignIn('facebook', { token, expires_at: expires, user });
 
                 const authUser = await Auth.currentAuthenticatedUser();
                 dispatch(slice.actions.setUser(authUser));

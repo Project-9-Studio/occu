@@ -3,7 +3,6 @@
     "name": "Occu: Job Organizer",
     "slug": "occu",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
     "platforms": [
       "ios",
       "android"
@@ -27,6 +26,7 @@
     "ios": {
       "bundleIdentifier": "com.project9.occu",
       "buildNumber": "0.0.9",
+      "usesAppleSignIn": true,
       "infoPlist": {
         "CFBundleName": "Occu",
         "CFBundleDisplayName": "Occu"
@@ -45,6 +45,7 @@
     "description": "",
     "facebookScheme": "fb321618182071489",
     "facebookAppId": "321618182071489",
-    "facebookDisplayName": "Occu"
+    "facebookDisplayName": "Occu",
+    "facebookAutoInitEnabled": true
   }
 }

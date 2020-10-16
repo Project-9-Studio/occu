@@ -8,7 +8,7 @@ import BottomTabNavigator from '../BottomTabNavigator';
 import { actions } from '../../models/auth';
 
 export default function Home(props) {
-  const user = useSelector((state) => state.user);
+  const user = useSelector((state) => state.user) || { picture: { data: { } } };
   const dispatch = useDispatch();
 
   return (

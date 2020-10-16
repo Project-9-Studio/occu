@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { SafeAreaView, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { Provider, useDispatch, useSelector } from 'react-redux';
@@ -32,7 +32,7 @@ export function App() {
         .then(user => dispatch(actions.setUser(user)))
         .catch(e => console.log(e));
     }
-  }, [dispatch, user]);
+  }, [user]);
 
   return (
     <>
