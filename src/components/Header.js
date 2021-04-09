@@ -1,14 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
 import Avatar from './Avatar';
 
-export default function AppHeader({ image, logout }) {
+export default function AppHeader({ image, logout, onAdd }) {
     return (
         <View style={styles.container}>
             <View style={styles.inner}>
-                <Text style={styles.header}>Occu</Text>
                 <TouchableOpacity onPress={logout}>
                     <Avatar image={{ uri: image }} />
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.add} onPress={onAdd}>
+                    <Image source={require('../../assets/plus_icon.png')} />
                 </TouchableOpacity>
             </View>
         </View>
@@ -34,6 +36,14 @@ const styles = StyleSheet.create({
     header: {
         fontFamily: 'public-sans-bold',
         fontSize: 28
+    },
+    add: {
+        width: 42,
+        height: 42,
+        borderRadius: 42,
+        backgroundColor: '#00F2FE',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
 

@@ -4,12 +4,14 @@ import { Entypo } from '@expo/vector-icons';
 
 export default function FilterJobs() {
     return (
-        <TouchableOpacity style={styles.container}>
-            <Text style={styles.status}>Applied</Text>
-            <View style={styles.icon}>
-                <Entypo name="sound-mix" size={22} color="white" />
-            </View>
-        </TouchableOpacity>
+        <View>
+            <TouchableOpacity style={styles.container}>
+                <Text style={styles.status}>Applied</Text>
+                <View style={styles.icon}>
+                    <Entypo name="sound-mix" size={22} color="white" />
+                </View>
+            </TouchableOpacity>
+        </View>
     );
 }
 

@@ -16,10 +16,10 @@ export function loginWithFacebook() {
                 );
                 
                 const user = await response.json();
-                await Auth.federatedSignIn('facebook', { token, expires_at: expires, user });
+                // await Auth.federatedSignIn('facebook', { token, expires_at: expires }, user);
 
-                const authUser = await Auth.currentAuthenticatedUser();
-                dispatch(slice.actions.setUser(authUser));
+                //const authUser = await Auth.currentAuthenticatedUser();
+                dispatch(slice.actions.setUser(user));
             }
         } catch ({ message }) {
             alert(message);

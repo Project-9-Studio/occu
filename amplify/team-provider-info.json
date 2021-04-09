@@ -8,7 +8,8 @@
             "DeploymentBucketName": "occu-occu-20190606184019-deployment",
             "UnauthRoleName": "occu-occu-20190606184019-unauthRole",
             "StackName": "occu-occu-20190606184019",
-            "StackId": "arn:aws:cloudformation:us-east-1:856233086576:stack/occu-occu-20190606184019/10138d20-88ac-11e9-b6ad-0e16aabfe77c"
+            "StackId": "arn:aws:cloudformation:us-east-1:856233086576:stack/occu-occu-20190606184019/10138d20-88ac-11e9-b6ad-0e16aabfe77c",
+            "AmplifyAppId": "d1t4s1bor9h6b7"
         },
         "categories": {
             "auth": {
