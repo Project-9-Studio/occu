@@ -3,7 +3,7 @@ import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function SignInBtn(props) {
     return (
-        <Pressable style={[styles.container, props.containerStyle]}>
+        <Pressable style={[styles.container, props.containerStyle]} onPress={props.onPress}>
             <Image source={props.logoSource} style={[styles.logo, props.logoStyle]} />
             <View style={{ flex: 1 }} />
             <Text style={[styles.text, props.labelText]}>

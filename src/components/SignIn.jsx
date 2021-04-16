@@ -4,7 +4,8 @@ import ScreenView from './ScreenView';
 import signInImage from '../../assets/signin_illustration.png';
 import SignInBtn from './buttons/SignInBtn';
 import appleLogo from '../../assets/appleLogo.png';
-import gmailLogo from '../../assets/gmailLogo.png';
+import GoogleSignInBtn from './buttons/GoogleSignIn';
+import { signInWithApple } from '../apis/auth';
 
 export default function SignIn() {
     return (
@@ -31,12 +32,9 @@ export default function SignIn() {
                         logoSource={appleLogo} 
                         label="Continue with Apple" 
                         containerStyle={{ marginBottom: 20 }}
+                        onPress={signInWithApple}
                     />
-                    <SignInBtn 
-                        logoSource={gmailLogo} 
-                        label="Continue with Google" 
-                        logoStyle={{ borderRadius: 6 }}
-                    />
+                    <GoogleSignInBtn />
                 </View>
             </View>
         </ScreenView>
